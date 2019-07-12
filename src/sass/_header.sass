@@ -1,10 +1,15 @@
 .header
     &-contacts
-        &__button
-            padding: 14px 22px
-            background-color: $accent-color
-            color: #ffffff
-            font-size: 14px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        &__phone
+            margin-right: 13px
+            font-size: 22px
+            color: $dark-text
             font-weight: 500
             line-height: 22px
-            border-radius: 5px
+            text-transform: uppercase
+            &:nth-child(1)
+                border-right: 1px solid grey
+                padding-right: 13px
