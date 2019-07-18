@@ -1,0 +1,80 @@
+// Extra small devices (portrait phones, less than 576px)
+
+// Small devices (landscape phones, less than 768px)
+
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) 
+    .header
+        &-logo
+            height: 61px
+            width: 130px
+        &-contacts
+            &__phone
+                font-size: 17px
+
+    .button
+            padding: 10px 18px
+        
+         
+
+// Small devices (landscape phones less than 768px)
+@media (max-width: 767.98px) 
+    .header
+        &-contacts
+            &__phones
+                flex-direction: column
+                
+            &__phone    
+                &:nth-child(1)
+                    border-right: none
+    .form
+        flex-direction: column
+
+
+
+
+// Large devices (desktops, less than 1200px)
+
+
+@media (max-width: 575.98px)
+    .header
+        &-contacts
+            &__phone
+                font-size: 14px
+        &-logo
+            background: $accent-color url(/src/img/logo_mini.png) center no-repeat
+            height: 31px
+            width: 31px
+    .hidden-mobile
+        display: none
+    .main
+        text-align: center
+        &-text
+            &__form
+                background-color: transparent
+                padding: 10px
+            &__title
+                font-size: 22px
+                font-weight: 700
+                line-height: 24px
+                color: $accent-color
+            &__subtitle
+                font-size: 18px
+                font-weight: 400
+    .form
+        display: block
+        &-title
+            padding-right: 0
+            font-size: 15px
+            font-weight: 
+            &__utp
+                font-family: "Roboto - Bold"
+                font-weight: 700
+        &__input
+            margin: 0 auto
+            margin-bottom: 13px  
+            padding: 20px 65px          
+            display: block
+            font-size: 13px
+

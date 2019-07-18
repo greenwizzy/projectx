@@ -14,7 +14,8 @@ var path = {
   },
   src: {
     sass: "src/sass/*.sass",
-    img: "src/img"
+    img: "src/img",
+    js: 'src/js/main.js'
   },
   html: "*.html"
 };
@@ -44,6 +45,7 @@ function watch() {
   style();
   gulp.watch(path.src.sass, style);
   gulp.watch(path.html, reload);
+  gulp.watch(path.src.js, reload);
 }
 
 exports.watch = watch;

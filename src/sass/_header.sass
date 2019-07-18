@@ -1,16 +1,25 @@
 .header
     padding: 15px 0
+    &-logo
+        background: url('/src/img/Добрый_картон.png') center no-repeat
+        background-size: 100%
+        width: 191px    
+        height: 61px    
     &-contacts
         display: flex
         justify-content: flex-end
         align-items: center
         &__phone
+            &s
+                display: flex   
             margin-right: 13px
             font-size: 22px
             color: $dark-text
+            font-family: "Roboto - Black"
             font-weight: 500
             line-height: 22px
             text-transform: uppercase
+            white-space: nowrap
             a
                 &:hover
                     color: $accent-color

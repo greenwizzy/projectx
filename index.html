@@ -8,6 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    
     <link rel="stylesheet" href="dist/css/style.css" />
     <!-- Bootstrap CSS -->
     <link
@@ -26,22 +27,24 @@
     <header class="header">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-4">
+          <div class="col-3 col-md-4">
             <div class="header-logo">
-              <img src="/src/img/Добрый_картон.png" alt="" />
             </div>
           </div>
-          <div class="col-8">
+          <div class="col-9 col-md-8">
+            
             <div class="header-contacts">
-              <div class="header-contacts__phone">
-                <a href="#">8 (347) 271-54-28</a>
-              </div>
-              <div class="header-contacts__phone">
-                <a href="#">8 (937) 363-30-00</a>
-              </div>
+                <div class="header-contacts__phones">
+                    <div class="header-contacts__phone">
+                        <a href="#">8 (347) 271-54-28</a>
+                      </div>
+                      <div class="header-contacts__phone">
+                        <a href="#">8 (937) 363-30-00</a>
+                      </div>
+                </div>
               <a class="header-contacts__button button" href="#">
-                <img src="/src/img/icon_fone.png" alt="" />
-                Заказать звонок
+                <i class="fas fa-phone-alt"></i>
+                <span class="hidden-mobile"> Заказать звонок</span> 
               </a>
             </div>
           </div>
@@ -52,12 +55,12 @@
     <section class="main">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-5">
-            <div class="main-img">
+          <div class="col-12 col-md-5">
+            <div class="main-img hidden-mobile">
               <img src="/src/img/main/main_img.png" alt="Картон" />
             </div>
           </div>
-          <div class="col-7">
+          <div class="col-12 col-md-7">
             <div class="main-text">
               <h1 class="main-text__title">
                 Производство упаковки из гофрокартона
@@ -92,12 +95,29 @@
 
     <div class="overlay">
       <div class="popup">
-        <div class="popup-title">Форма обратной связи</div>
+        <h1 class="popup-title">Форма обратной связи</h1>
         <div class="popup-close">&times;</div>
         <div class="popup-form">
-          <form action="#" class="main-form"></form>
+          <div class="form-text">
+            <h2 class="form-text__title">Получите индивидуальное предложение
+            </br> <span>на производство и поставку изделий</span></h2>
+          <h3 class="form-text__label">Введите ваш номер телефона:</h3>
+          </div>
+
+
+          <form action="#" class="main-form">
+            <input type="tel" class="main-form__input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+            <button class="button  main-form__button">Оставить заявку</button>
+          </form>
+          <small class="form-small">*Минимальный заказ 500шт.</small>
         </div>
       </div>
     </div>
+
+
+
+    <script src="https://kit.fontawesome.com/4b252bac43.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
